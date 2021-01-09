@@ -200,6 +200,12 @@ func (s *GobusterS3) GetConfigString() (string, error) {
 		}
 	}
 
+	if s.globalopts.PermsOnly {
+		if _, err := fmt.Fprintf(tw, "[+] Permutations only:\ttrue\n"); err != nil {
+			return "", err
+		}
+	}
+
 	if _, err := fmt.Fprintf(tw, "[+] Maximum files to list:\t%d\n", o.MaxFilesToList); err != nil {
 		return "", err
 	}

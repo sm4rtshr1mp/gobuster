@@ -134,6 +134,11 @@ func parseGlobalOptions() (*libgobuster.Options, error) {
 		return nil, fmt.Errorf("invalid value for no-error: %w", err)
 	}
 
+	globalopts.PermsOnly, err = rootCmd.Flags().GetBool("perms-only")
+	if err != nil {
+		return nil, fmt.Errorf("invalid value for perms-only: %w", err)
+	}
+
 	return globalopts, nil
 }
 
@@ -156,5 +161,6 @@ func init() {
 	rootCmd.PersistentFlags().BoolP("quiet", "q", false, "Don't print the banner and other noise")
 	rootCmd.PersistentFlags().BoolP("no-progress", "z", false, "Don't display progress")
 	rootCmd.PersistentFlags().Bool("no-error", false, "Don't display errors")
+	rootCmd.PersistentFlags().Bool("perms-only", false, "Only use the permutations created from the patterns")
 	rootCmd.PersistentFlags().StringP("pattern", "p", "", "File containing replacement patterns")
 }

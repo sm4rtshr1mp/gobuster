@@ -124,7 +124,11 @@ func (g *Gobuster) getWordlist() (*bufio.Scanner, error) {
 	// calcutate expected requests
 	g.RequestsExpected = lines
 	if g.Opts.PatternFile != "" {
-		g.RequestsExpected += lines * len(g.Opts.Patterns)
+		if g.Opts.PermsOnly {
+			g.RequestsExpected = lines * len(g.Opts.Patterns)
+		} else {
+			g.RequestsExpected += lines * len(g.Opts.Patterns)
+		}
 	}
 
 	g.RequestsExpected *= g.plugin.RequestsPerRun()
@@ -171,8 +175,12 @@ Scan:
 		default:
 			word := scanner.Text()
 			perms := g.processPatterns(word)
-			// add the original word
-			wordChan <- word
+
+			// only add the original word if no patterns or if PermsOnly is false
+			if perms == nil || !g.Opts.PermsOnly {
+				wordChan <- word
+			}
+
 			// now create perms
 			for _, w := range perms {
 				select {

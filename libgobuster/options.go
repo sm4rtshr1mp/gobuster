@@ -15,6 +15,7 @@ type Options struct {
 	Quiet          bool
 	WildcardForced bool
 	Verbose        bool
+	PermsOnly      bool
 	Delay          time.Duration
 }
 
