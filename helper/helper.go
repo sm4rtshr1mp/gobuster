@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/OJ/gobuster/v3/libgobuster"
+	"github.com/sm4rtshr1mp/gobuster/v3/libgobuster"
 )
 
 // ParseExtensions parses the extensions provided as a comma separated list

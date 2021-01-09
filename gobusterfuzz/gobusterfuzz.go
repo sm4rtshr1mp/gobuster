@@ -8,8 +8,8 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/OJ/gobuster/v3/helper"
-	"github.com/OJ/gobuster/v3/libgobuster"
+	"github.com/sm4rtshr1mp/gobuster/v3/helper"
+	"github.com/sm4rtshr1mp/gobuster/v3/libgobuster"
 )
 
 // ErrWildcard is returned if a wildcard response is found

@@ -167,14 +167,14 @@ Global Flags:
 
 We are now shipping binaries for each of the releases so that you don't even have to build them yourself! How wonderful is that!
 
-If you're stupid enough to trust binaries that I've put together, you can download them from the [releases](https://github.com/OJ/gobuster/releases) page.
+If you're stupid enough to trust binaries that I've put together, you can download them from the [releases](https://github.com/sm4rtshr1mp/gobuster/releases) page.
 
 ### Using `go get`
 
 If you have a [Go](https://golang.org/) environment ready to go, it's as easy as:
 
 ```bash
-go get github.com/OJ/gobuster
+go get github.com/sm4rtshr1mp/gobuster
 ```
 
 ## Building From Source

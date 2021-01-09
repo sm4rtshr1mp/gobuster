@@ -1,4 +1,4 @@
-module github.com/OJ/gobuster/v3
+module github.com/sm4rtshr1mp/gobuster/v3
 
 require (
 	github.com/google/uuid v1.1.4

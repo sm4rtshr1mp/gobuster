@@ -1,7 +1,7 @@
 package gobusters3
 
 import (
-	"github.com/OJ/gobuster/v3/libgobuster"
+	"github.com/sm4rtshr1mp/gobuster/v3/libgobuster"
 )
 
 // OptionsS3 is the struct to hold all options for this plugin

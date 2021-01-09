@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/OJ/gobuster/v3/libgobuster"
+	"github.com/sm4rtshr1mp/gobuster/v3/libgobuster"
 )
 
 const ruler = "==============================================================="

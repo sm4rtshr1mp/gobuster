@@ -1,7 +1,7 @@
 package gobusterfuzz
 
 import (
-	"github.com/OJ/gobuster/v3/libgobuster"
+	"github.com/sm4rtshr1mp/gobuster/v3/libgobuster"
 )
 
 // OptionsFuzz is the struct to hold all options for this plugin

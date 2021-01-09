@@ -3,9 +3,9 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/OJ/gobuster/v3/cli"
-	"github.com/OJ/gobuster/v3/gobusters3"
-	"github.com/OJ/gobuster/v3/libgobuster"
+	"github.com/sm4rtshr1mp/gobuster/v3/cli"
+	"github.com/sm4rtshr1mp/gobuster/v3/gobusters3"
+	"github.com/sm4rtshr1mp/gobuster/v3/libgobuster"
 	"github.com/spf13/cobra"
 )
 
