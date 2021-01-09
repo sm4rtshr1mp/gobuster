@@ -46,7 +46,8 @@ func NewGobusterS3(cont context.Context, globalopts *libgobuster.Options, opts *
 	httpOpts := libgobuster.HTTPOptions{
 		BasicHTTPOptions: basicOptions,
 		// needed so we can list bucket contents
-		FollowRedirect: true,
+		FollowRedirect:  true,
+		NoTLSValidation: opts.NoTLSValidation,
 	}
 
 	h, err := libgobuster.NewHTTPClient(cont, &httpOpts)

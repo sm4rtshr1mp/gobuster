@@ -7,7 +7,8 @@ import (
 // OptionsS3 is the struct to hold all options for this plugin
 type OptionsS3 struct {
 	libgobuster.BasicHTTPOptions
-	MaxFilesToList int
+	MaxFilesToList  int
+	NoTLSValidation bool
 }
 
 // NewOptionsS3 returns a new initialized OptionsS3
